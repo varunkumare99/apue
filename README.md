@@ -34,3 +34,12 @@ Course [CS631 - APUE](https://stevens.netmeister.org/631/)
 ##### midTerm Project (Implementation of ls(1) command in NETBSD)
 * midProject/ls.pdf - project specification.
 * midProject/src - source files
+
+## week-4
+* cd.c - to change current working directory.
+* getpw.c - print userName/uid and iterate over all entries in /etc/passwd.
+* groups.c - print groupName/gid and iterate over all group in system(/etc/groups).
+* lns.c - create a soft link.
+* rename.c - renaming a file (mv command).
+* time.c - printing time in various formats.
+* wait-unlink.c - to unlink a file. The space allocated to the file is cleared, once all the links pointing to the inode are deleted.
