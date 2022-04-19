@@ -22,3 +22,15 @@ Course [CS631 - APUE](https://stevens.netmeister.org/631/)
 * hw1/bbcp: implemention of the barebones copy command.
 * hw1/testcp.sh : test scipt for bbcp.
 * hw1/bbcp.pdf : bbcp specification
+
+## week-3
+* access.c - check if user has access to given file.
+* chmod.c - change permissions on file.
+* chown.c - change ownership of a file.
+* setuid.c - raise/drop user privileges.
+* size.c - print file size, block size of the given file.
+* umask.c - setting default permissions with umask.
+
+##### midTerm Project (Implementation of ls(1) command in NETBSD)
+* midProject/ls.pdf - project specification.
+* midProject/src - source files
