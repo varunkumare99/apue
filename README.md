@@ -33,7 +33,10 @@ Course [CS631 - APUE](https://stevens.netmeister.org/631/)
 
 ##### midTerm Project (Implementation of ls(1) command in NETBSD)
 * midProject/ls.pdf - project specification.
-* midProject/src - source files
+* midProject/src, midProject/include - source files, header files.
+* midProject/Makefile - build the project.(ls binary file is created)
+* midProject/ls-test - test script.
+* midProject/makelstest - test scrips.
 
 ## week-4
 * cd.c - to change current working directory.
@@ -43,3 +46,8 @@ Course [CS631 - APUE](https://stevens.netmeister.org/631/)
 * rename.c - renaming a file (mv command).
 * time.c - printing time in various formats.
 * wait-unlink.c - to unlink a file. The space allocated to the file is cleared, once all the links pointing to the inode are deleted.
+
+## week-5
+* compileChain - compiling files upto various stages(preprocessing, compile, assembly, linking).
+* gdb-examples - debugging errors with gdb.
+* make-examples - automating build with Make.
