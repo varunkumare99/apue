@@ -51,3 +51,24 @@ Course [CS631 - APUE](https://stevens.netmeister.org/631/)
 * compileChain - compiling files upto various stages(preprocessing, compile, assembly, linking).
 * gdb-examples - debugging errors with gdb.
 * make-examples - automating build with Make.
+
+## week-6
+* memory-layout0.c - print the memory location of variable.
+* memory-layout1.c - print the memory location of private variables, global variable and functions.
+* memory-layout2.c - print the memory location of stack, heap, initialized data, unintialized data, text segment.
+* memory-layout3.c - overflow the stack by by repeatedly calling function.
+* memory-layout4.c - printing the memory of location environment variables.
+* memory-layout5.c - accessing the last and first environment variable.
+* memory-layout6.c - examining memory layout after updating a env variable to a larger value.
+* memory-layout7.c - examining memory layout after addition of a new env variable.
+* memory-layout8.c - examining memory layout after unsetting an env variable.
+* entry1.c - print the address of function main.
+* entry2.c - start the program from a different function apart from main.
+* entry3.c - start the program from a different function and exit instead of return.
+* entry4.c - comparing return statements between c89 and c11 standards.
+* exit-handlers.c - terminaing a program using exit(),___ _exit(), abort().
+* malloc.c - using malloc() and realloc();
+* pid.c - get the process of current and the parent process.
+* forkseek.c - illustrates sharing of file descriptors between parent and child processes.
+* forkflush.c - illustrates sharing of buffers in between parent and child processes.
+* zombies.c - illustrate creation of zombie process.
