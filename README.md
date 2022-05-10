@@ -72,3 +72,12 @@ Course [CS631 - APUE](https://stevens.netmeister.org/631/)
 * forkseek.c - illustrates sharing of file descriptors between parent and child processes.
 * forkflush.c - illustrates sharing of buffers in between parent and child processes.
 * zombies.c - illustrate creation of zombie process.
+
+## week-7
+* sigusr.c - illustrates the use of signals handlers, by implementing signal handlers for SIGUSR1 and SIGUSR2
+* signals1.c - illustrates interuption while executing a signal handler.
+* signals2.c - illustrates the default behaviour of signals handlers.
+* signals3.c - illustrates example of sigaction.
+* signals4.c - illustrates the risk of buffered I/O from within the signal handler.
+* reentrant.c - illustrates the risk of calling non-re-entrant functions from within the signal handler.
+* eintr.c - illustrates the restart of a system call from being interupted.
