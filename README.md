@@ -81,3 +81,27 @@ Course [CS631 - APUE](https://stevens.netmeister.org/631/)
 * signals4.c - illustrates the risk of buffered I/O from within the signal handler.
 * reentrant.c - illustrates the risk of calling non-re-entrant functions from within the signal handler.
 * eintr.c - illustrates the restart of a system call from being interupted.
+
+## week-8
+* semdemo.c - illustrates the use of semaphores.
+* shemdemo.c - illustrates the use of shared memory.
+* msgrecv.c, msgsend.c - illustrates the use of message queues.
+* mqrecv.c, mqsend.c - illustrates the use of POSIX message queues.
+* pipe1.c - illustsrates echo msg | cat pipeline. 
+* pipe2.c - illustrates cat file.txt | ${PAGER:-/usr/bin/more}
+* popen.c - same as pipe2.c but using popen(3).
+
+##### homework-2
+* hw2/command.c : pass a command to the shell and return stdout and stderr.
+* hw2/driver.c : example driver program to run command.
+* hw2/command.pdf : command specification
+The program uses the following:
+- create two pipes, one for stdout, one for stderr of the command to execute
+- ignore SIGINT, SIGQUIT; block SIGCHLD
+- fork(2) a new process
+- dup2(2) the respective file descriptors onto the write-ends of the pipes
+- exec(3) the command in question
+- read(2) from the read-ends of the pipes
+- append output to the respective buffer, careful to not overflow them
+- wait(3) for the process to terminate
+
